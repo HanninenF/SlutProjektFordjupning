@@ -1,4 +1,4 @@
-import { url } from "../main";
+const url: string = "https://api.nationalize.io/?name=";
 
 export const getNationality = async (
   stringInput: string
