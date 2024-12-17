@@ -1,5 +1,17 @@
-html {
+@mixin style {
   background-color: #213547;
+  color: bisque;
+}
+html {
+  @include style();
+  body {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    p {
+      white-space: break-spaces;
+    }
+  }
 }
 @media (prefers-color-scheme: light) {
   :root {
